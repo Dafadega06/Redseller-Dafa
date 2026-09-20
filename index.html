@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#e31b23"
+    >
+
+    <title>Dafa Niat Baik</title>
+
+
+    <style>
+
+        /* =====================================
+           RESET
+        ===================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* =====================================
+           VARIABLES
+        ===================================== */
+
+        :root {
+
+            --red: #e31b23;
+            --red-dark: #bd1017;
+
+            --text: #172033;
+            --muted: #727b8b;
+
+            --border: #e3e6eb;
+
+            --background: #f7f7f8;
+
+            --green: #16803a;
+
+        }
+
+
+        /* =====================================
+           BODY
+        ===================================== */
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            min-height: 100vh;
+
+            color: var(--text);
+
+            background:
+
+                radial-gradient(
+                    circle at 5% 0%,
+                    rgba(227, 27, 35, 0.08),
+                    transparent 28%
+                ),
+
+                radial-gradient(
+                    circle at 95% 10%,
+                    rgba(227, 27, 35, 0.06),
+                    transparent 25%
+                ),
+
+                var(--background);
+
+        }
+
+
+        /* =====================================
+           HEADER
+        ===================================== */
+
+        .header {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding:
+                30px
+                18px
+                100px;
+
+            color: white;
+
+            text-align: center;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    #ed1c24 0%,
+                    #d71920 60%,
+                    #b90f16 100%
+                );
+
+            border-radius:
+                0 0 36px 36px;
+
+        }
+
+
+        .header::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 260px;
+            height: 260px;
+
+            top: -140px;
+            right: -80px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255,255,255,0.08);
+
+        }
+
+
+        .header::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 210px;
+            height: 210px;
+
+            bottom: -140px;
+            left: -80px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255,255,255,0.07);
+
+        }
+
+
+        .header-inner {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: min(
+                760px,
+                100%
+            );
+
+            margin: auto;
+
+        }
+
+
+        /* =====================================
+           LOGO
+        ===================================== */
+
+        .logo {
+
+            display: block;
+
+            width: 118px;
+            height: 118px;
+
+            margin:
+                0 auto 15px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            background: white;
+
+            border:
+                5px solid
+                rgba(255,255,255,0.95);
+
+            box-shadow:
+                0 12px 32px
+                rgba(0,0,0,0.20);
+
+            animation:
+                logoFloat
+                3s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        @keyframes logoFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+
+        }
+
+
+        /* =====================================
+           BRAND
+        ===================================== */
+
+        .brand {
+
+            font-size:
+                clamp(
+                    28px,
+                    6vw,
+                    42px
+                );
+
+            font-weight: 900;
+
+            letter-spacing: -1.5px;
+
+        }
+
+
+        .subtitle {
+
+            margin-top: 5px;
+
+            font-size: 14px;
+
+            opacity: 0.9;
+
+            letter-spacing: 0.4px;
+
+        }
+
+
+        /* =====================================
+           TITLE
+        ===================================== */
+
+        .header h1 {
+
+            margin-top: 25px;
+
+            font-size:
+                clamp(
+                    25px,
+                    5vw,
+                    36px
+                );
+
+            line-height: 1.15;
+
+            letter-spacing: -0.8px;
+
+        }
+
+
+        .header-description {
+
+            margin-top: 10px;
+
+            font-size: 14px;
+
+            opacity: 0.92;
+
+        }
+
+
+        /* =====================================
+           MAIN CONTAINER
+        ===================================== */
+
+        .container {
+
+            position: relative;
+
+            z-index: 5;
+
+            width:
+                min(
+                    760px,
+                    calc(100% - 28px)
+                );
+
+            margin:
+                -60px
+                auto
+                40px;
+
+        }
+
+
+        /* =====================================
+           MOTIVATION
+        ===================================== */
+
+        .motivation {
+
+            position: relative;
+
+            overflow: hidden;
+
+            margin-bottom: 17px;
+
+            padding:
+                21px
+                48px
+                18px;
+
+            text-align: center;
+
+            border:
+                2px solid
+                #f2b900;
+
+            border-radius: 20px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #fffbe8 0%,
+                    #fff4b8 48%,
+                    #fffbe8 100%
+                );
+
+            box-shadow:
+                0 10px 30px
+                rgba(227,27,35,0.12);
+
+            animation:
+                motivationGlow
+                2.4s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        /* cahaya bergerak */
+
+        .motivation::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: -120%;
+
+            width: 70%;
+            height: 100%;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255,255,255,0.75),
+                    transparent
+                );
+
+            transform:
+                skewX(-20deg);
+
+            animation:
+                motivationShine
+                3.5s
+                infinite;
+
+            pointer-events: none;
+
+        }
+
+
+        .motivation-warning {
+
+            position: absolute;
+
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            font-size: 25px;
+
+            animation:
+                warningBlink
+                1s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        .warning-left {
+
+            left: 15px;
+
+        }
+
+
+        .warning-right {
+
+            right: 15px;
+
+        }
+
+
+        .motivation-main {
+
+            position: relative;
+
+            z-index: 2;
+
+            font-size:
+                clamp(
+                    17px,
+                    4vw,
+                    23px
+                );
+
+            font-weight: 900;
+
+            letter-spacing: -0.4px;
+
+            color: #a9181e;
+
+            animation:
+                motivationText
+                1.8s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        .motivation-reward {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: inline-block;
+
+            margin-top: 5px;
+
+            font-size:
+                clamp(
+                    22px,
+                    5vw,
+                    31px
+                );
+
+            font-weight: 950;
+
+            color: var(--red);
+
+            animation:
+                rewardPulse
+                1.25s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        .motivation-small {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: 8px;
+
+            font-size:
+                clamp(
+                    11px,
+                    2.8vw,
+                    14px
+                );
+
+            font-weight: 700;
+
+            color: #806c2b;
+
+            opacity: 0.9;
+
+        }
+
+
+        /* =====================================
+           MOTIVATION ANIMATIONS
+        ===================================== */
+
+        @keyframes warningBlink {
+
+            0%,
+            100% {
+
+                opacity: 1;
+
+                transform:
+                    translateY(-50%)
+                    scale(1);
+
+            }
+
+            50% {
+
+                opacity: 0.35;
+
+                transform:
+                    translateY(-50%)
+                    scale(1.2);
+
+            }
+
+        }
+
+
+        @keyframes motivationText {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.62;
+            }
+
+        }
+
+
+        @keyframes rewardPulse {
+
+            0%,
+            100% {
+
+                transform:
+                    scale(1);
+
+                text-shadow:
+                    0 0 0
+                    rgba(227,27,35,0);
+
+            }
+
+            50% {
+
+                transform:
+                    scale(1.07);
+
+                text-shadow:
+                    0 0 16px
+                    rgba(227,27,35,0.42);
+
+            }
+
+        }
+
+
+        @keyframes motivationGlow {
+
+            0%,
+            100% {
+
+                box-shadow:
+                    0 10px 30px
+                    rgba(227,27,35,0.10);
+
+            }
+
+            50% {
+
+                box-shadow:
+                    0 12px 38px
+                    rgba(227,27,35,0.22);
+
+            }
+
+        }
+
+
+        @keyframes motivationShine {
+
+            0% {
+                left: -120%;
+            }
+
+            35% {
+                left: 140%;
+            }
+
+            100% {
+                left: 140%;
+            }
+
+        }
+
+
+        /* =====================================
+           CARD
+        ===================================== */
+
+        .card,
+        .result-card {
+
+            padding: 22px;
+
+            margin-bottom: 16px;
+
+            background:
+                rgba(255,255,255,0.97);
+
+            border:
+                1px solid
+                rgba(20,30,50,0.06);
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 28px
+                rgba(23,32,51,0.07);
+
+        }
+
+
+        /* =====================================
+           LABEL
+        ===================================== */
+
+        .label {
+
+            display: block;
+
+            margin-bottom: 11px;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+        }
+
+
+        .label-small {
+
+            margin-top: 7px;
+
+            font-size: 12px;
+
+            color: var(--muted);
+
+        }
+
+
+        /* =====================================
+           INPUT
+        ===================================== */
+
+        .input-wrapper {
+
+            display: flex;
+
+            align-items: center;
+
+            height: 58px;
+
+            padding: 0 15px;
+
+            background: white;
+
+            border:
+                1.5px solid
+                var(--border);
+
+            border-radius: 14px;
+
+            transition: 0.2s;
+
+        }
+
+
+        .input-wrapper:focus-within {
+
+            border-color:
+                var(--red);
+
+            box-shadow:
+                0 0 0 4px
+                rgba(227,27,35,0.08);
+
+        }
+
+
+        .currency {
+
+            margin-right: 9px;
+
+            font-size: 16px;
+
+            font-weight: 800;
+
+            color: #4f5868;
+
+        }
+
+
+        .input-wrapper input {
+
+            width: 100%;
+
+            border: 0;
+
+            outline: 0;
+
+            background: transparent;
+
+            color: var(--text);
+
+            font-size: 21px;
+
+            font-weight: 800;
+
+        }
+
+
+        .input-wrapper input::placeholder {
+
+            color: #b6bcc6;
+
+            font-weight: 500;
+
+        }
+
+
+        /* =====================================
+           SECTION TITLE
+        ===================================== */
+
+        .section-title {
+
+            margin-bottom: 13px;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+        }
+
+
+        /* =====================================
+           DISCOUNT BUTTONS
+        ===================================== */
+
+        .discount-buttons {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 10px;
+
+        }
+
+
+        .discount-btn {
+
+            position: relative;
+
+            height: 56px;
+
+            border:
+                1.5px solid
+                var(--border);
+
+            background: white;
+
+            color: var(--text);
+
+            border-radius: 14px;
+
+            font-size: 17px;
+
+            font-weight: 850;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+
+        }
+
+
+        .discount-btn:hover {
+
+            border-color:
+                var(--red);
+
+            transform:
+                translateY(-1px);
+
+        }
+
+
+        .discount-btn.active {
+
+            background:
+                var(--red);
+
+            color: white;
+
+            border-color:
+                var(--red);
+
+            box-shadow:
+                0 8px 18px
+                rgba(227,27,35,0.20);
+
+        }
+
+
+        .discount-btn.active::after {
+
+            content: "✓";
+
+            position: absolute;
+
+            top: 7px;
+            right: 8px;
+
+            width: 18px;
+            height: 18px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: white;
+
+            color: var(--red);
+
+            font-size: 12px;
+
+            font-weight: 900;
+
+        }
+
+
+        /* =====================================
+           RESULT CARD
+        ===================================== */
+
+        .result-card {
+
+            background:
+
+                linear-gradient(
+                    180deg,
+                    #fff7f7 0%,
+                    #ffffff 35%
+                );
+
+            border-color:
+                rgba(227,27,35,0.10);
+
+        }
+
+
+        .result-label {
+
+            margin-bottom: 5px;
+
+            font-size: 14px;
+
+            font-weight: 750;
+
+            color: #596274;
+
+        }
+
+
+        .result-price {
+
+            margin-bottom: 22px;
+
+            color: var(--red);
+
+            font-size:
+                clamp(
+                    34px,
+                    7vw,
+                    46px
+                );
+
+            line-height: 1;
+
+            font-weight: 950;
+
+            letter-spacing: -1.5px;
+
+        }
+
+
+        /* =====================================
+           DETAIL
+        ===================================== */
+
+        .line {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 18px;
+
+            padding: 11px 0;
+
+            border-bottom:
+                1px solid
+                #eceef2;
+
+            font-size: 14px;
+
+        }
+
+
+        .line:last-of-type {
+
+            border-bottom: 0;
+
+        }
+
+
+        .line-name {
+
+            color: #667084;
+
+        }
+
+
+        .line-value {
+
+            font-weight: 850;
+
+            white-space: nowrap;
+
+        }
+
+
+        .minus {
+
+            color: var(--red);
+
+        }
+
+
+        .plus {
+
+            color: var(--green);
+
+        }
+
+
+        /* =====================================
+           COPY BUTTON
+        ===================================== */
+
+        .copy-btn {
+
+            width: 100%;
+
+            height: 54px;
+
+            margin-top: 16px;
+
+            border: 0;
+
+            border-radius: 14px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #ed1c24,
+                    #d71920
+                );
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 850;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 18px
+                rgba(227,27,35,0.20);
+
+            transition: 0.2s;
+
+        }
+
+
+        .copy-btn:hover {
+
+            transform:
+                translateY(-1px);
+
+        }
+
+
+        .copy-btn:active {
+
+            transform:
+                scale(0.985);
+
+        }
+
+
+        /* =====================================
+           RESET BUTTON
+        ===================================== */
+
+        .reset-btn {
+
+            width: 100%;
+
+            height: 44px;
+
+            margin-top: 3px;
+
+            border: 0;
+
+            background: transparent;
+
+            color: #7a8290;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+        }
+
+
+        .reset-btn:hover {
+
+            color: var(--red);
+
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        .footer {
+
+            padding:
+                2px
+                0
+                10px;
+
+            text-align: center;
+
+            color: #8b93a1;
+
+            font-size: 12px;
+
+        }
+
+
+        /* =====================================
+           TOAST
+        ===================================== */
+
+        .toast {
+
+            position: fixed;
+
+            left: 50%;
+            bottom: 24px;
+
+            z-index: 100;
+
+            transform:
+                translate(-50%,20px);
+
+            padding:
+                11px 17px;
+
+            border-radius: 999px;
+
+            background: #172033;
+
+            color: white;
+
+            font-size: 13px;
+
+            font-weight: 750;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            transition: 0.25s;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,0.20);
+
+        }
+
+
+        .toast.show {
+
+            opacity: 1;
+
+            transform:
+                translate(-50%,0);
+
+        }
+
+
+        /* =====================================
+           MOBILE
+        ===================================== */
+
+        @media (max-width: 520px) {
+
+            .header {
+
+                padding-top: 24px;
+
+                padding-bottom: 88px;
+
+            }
+
+
+            .logo {
+
+                width: 98px;
+                height: 98px;
+
+            }
+
+
+            .container {
+
+                width:
+                    calc(100% - 20px);
+
+                margin-top: -53px;
+
+            }
+
+
+            .card,
+            .result-card {
+
+                padding: 18px;
+
+                border-radius: 18px;
+
+            }
+
+
+            .motivation {
+
+                padding-left: 37px;
+
+                padding-right: 37px;
+
+            }
+
+
+            .motivation-warning {
+
+                font-size: 21px;
+
+            }
+
+
+            .warning-left {
+
+                left: 10px;
+
+            }
+
+
+            .warning-right {
+
+                right: 10px;
+
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         HEADER
+    ===================================== -->
+
+    <header class="header">
+
+        <div class="header-inner">
+
+
+            <!-- LOGO -->
+
+            <img
+                src="logo.jpg"
+                class="logo"
+                id="logo"
+                alt="Logo Dapun RedSeller"
+            >
+
+
+            <!-- BRAND -->
+
+            <div class="brand">
+                Dafa Niat Baik
+            </div>
+
+
+            <div class="subtitle">
+                RedSeller Pricing Tool
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                Hitung harga hotel
+                <br>
+                dengan lebih cepat.
+            </h1>
+
+
+            <p class="header-description">
+                Masukkan harga hotel dan pilih
+                skema yang digunakan.
+            </p>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         MAIN
+    ===================================== -->
+
+    <main class="container">
+
+
+        <!-- =================================
+             MOTIVATION
+        ================================= -->
+
+        <section
+            class="motivation"
+            aria-label="Pesan motivasi"
+        >
+
+
+            <span
+                class="motivation-warning motivation-warning-left"
+            >
+                ⚠️
+            </span>
+
+
+            <span
+                class="motivation-warning motivation-warning-right"
+            >
+                ⚠️
+            </span>
+
+
+            <div class="motivation-main">
+                🔥 SEMANGAT YA! MAGANGNYA 🔥
+            </div>
+
+
+            <div class="motivation-reward">
+                ✨ JANLUP SELF REWARD ✨
+            </div>
+
+
+            <div class="motivation-small">
+                Capek boleh, ngeluh boleh,
+                tapi jangan lupa Scroll. 💪
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             HARGA HOTEL
+        ================================= -->
+
+        <section class="card">
+
+
+            <label
+                class="label"
+                for="hargaHotel"
+            >
+                Harga Hotel
+            </label>
+
+
+            <div class="input-wrapper">
+
+
+                <span class="currency">
+                    Rp
+                </span>
+
+
+                <input
+                    type="text"
+                    id="hargaHotel"
+                    placeholder="0"
+                    inputmode="numeric"
+                    autocomplete="off"
+                >
+
+
+            </div>
+
+
+            <div class="label-small">
+                Contoh: 250.000
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             PILIH SKEMA
+        ================================= -->
+
+        <section class="card">
+
+
+            <div class="section-title">
+                Pilih Skema
+            </div>
+
+
+            <div class="discount-buttons">
+
+
+                <button
+                    type="button"
+                    class="discount-btn active"
+                    data-discount="28"
+                >
+                    28%
+                </button>
+
+
+                <button
+                    type="button"
+                    class="discount-btn"
+                    data-discount="30"
+                >
+                    30%
+                </button>
+
+
+                <button
+                    type="button"
+                    class="discount-btn"
+                    data-discount="35"
+                >
+                    35%
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             FEE
+        ================================= -->
+
+        <section class="card">
+
+
+            <label
+                class="label"
+                for="fee"
+            >
+                Fee
+            </label>
+
+
+            <div class="input-wrapper">
+
+
+                <span class="currency">
+                    Rp
+                </span>
+
+
+                <input
+                    type="text"
+                    id="fee"
+                    placeholder="0"
+                    inputmode="numeric"
+                    autocomplete="off"
+                >
+
+
+            </div>
+
+
+            <div class="label-small">
+                Contoh: 10.000
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             HASIL
+        ================================= -->
+
+        <section class="result-card">
+
+
+            <div class="result-label">
+                Harga Customer
+            </div>
+
+
+            <div
+                class="result-price"
+                id="hargaCustomer"
+            >
+                Rp 0
+            </div>
+
+
+
+            <!-- HARGA HOTEL -->
+
+            <div class="line">
+
+
+                <span class="line-name">
+                    Harga hotel
+                </span>
+
+
+                <span
+                    class="line-value"
+                    id="detailHarga"
+                >
+                    Rp 0
+                </span>
+
+
+            </div>
+
+
+
+            <!-- POTONGAN -->
+
+            <div class="line">
+
+
+                <span class="line-name">
+
+                    Potongan
+
+                    <span id="detailPersen">
+                        28%
+                    </span>
+
+                </span>
+
+
+                <span
+                    class="line-value minus"
+                    id="detailPotongan"
+                >
+                    - Rp 0
+                </span>
+
+
+            </div>
+
+
+
+            <!-- FEE -->
+
+            <div class="line">
+
+
+                <span class="line-name">
+                    Fee
+                </span>
+
+
+                <span
+                    class="line-value plus"
+                    id="detailFee"
+                >
+                    + Rp 0
+                </span>
+
+
+            </div>
+
+
+
+            <!-- COPY -->
+
+            <button
+                type="button"
+                class="copy-btn"
+                id="copyBtn"
+            >
+                &nbsp; Salin Harga Customer
+            </button>
+
+
+
+            <!-- RESET -->
+
+            <button
+                type="button"
+                class="reset-btn"
+                id="resetBtn"
+            >
+                Reset
+            </button>
+
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+            Dafa Niat Baik • RedSeller Pricing Tool
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         TOAST
+    ===================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        Harga berhasil disalin!
+    </div>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ===================================== -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+
+</body>
+
+</html>
